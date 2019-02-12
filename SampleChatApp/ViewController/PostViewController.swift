@@ -30,7 +30,7 @@ class PostViewController: UIViewController {
         //Realm初期化
          realm = try! Realm()
         //topの結果が取得できる
-        let result = realm.objects(User.self).first
+        let result = realm.objects(UserRealm.self).first
         userName = result?.userName
     }
     

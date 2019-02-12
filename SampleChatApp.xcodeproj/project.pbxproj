@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		406AC4CE2209A3BA00E490F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406AC4CD2209A3BA00E490F8 /* User.swift */; };
+		400BCB302212195C00F58EF8 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BCB2E2212195C00F58EF8 /* CustomCell.swift */; };
+		400BCB312212195C00F58EF8 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 400BCB2F2212195C00F58EF8 /* CustomCell.xib */; };
+		400BCB332212CAF700F58EF8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BCB322212CAF700F58EF8 /* User.swift */; };
+		406AC4CE2209A3BA00E490F8 /* UserRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406AC4CD2209A3BA00E490F8 /* UserRealm.swift */; };
 		406AC4D02209AD8E00E490F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 406AC4CF2209AD8E00E490F8 /* GoogleService-Info.plist */; };
 		40CF494A22099AE500AEAFB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF494922099AE500AEAFB5 /* AppDelegate.swift */; };
 		40CF494C22099AE500AEAFB5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF494B22099AE500AEAFB5 /* SignUpViewController.swift */; };
@@ -39,7 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		406AC4CD2209A3BA00E490F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		400BCB2E2212195C00F58EF8 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		400BCB2F2212195C00F58EF8 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		400BCB322212CAF700F58EF8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		406AC4CD2209A3BA00E490F8 /* UserRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRealm.swift; sourceTree = "<group>"; };
 		406AC4CF2209AD8E00E490F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		40CF494622099AE500AEAFB5 /* SampleChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CF494922099AE500AEAFB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,10 +93,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		400BCB2D2212192500F58EF8 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				400BCB2E2212195C00F58EF8 /* CustomCell.swift */,
+				400BCB2F2212195C00F58EF8 /* CustomCell.xib */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		406AC4CA2209A36700E490F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				406AC4CD2209A3BA00E490F8 /* User.swift */,
+				406AC4CD2209A3BA00E490F8 /* UserRealm.swift */,
+				400BCB322212CAF700F58EF8 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +136,7 @@
 		40CF494822099AE500AEAFB5 /* SampleChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				400BCB2D2212192500F58EF8 /* Custom */,
 				406AC4CF2209AD8E00E490F8 /* GoogleService-Info.plist */,
 				406AC4CA2209A36700E490F8 /* Model */,
 				40CF497722099B6400AEAFB5 /* ViewController */,
@@ -283,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400BCB312212195C00F58EF8 /* CustomCell.xib in Resources */,
 				40CF495422099AE700AEAFB5 /* LaunchScreen.storyboard in Resources */,
 				406AC4D02209AD8E00E490F8 /* GoogleService-Info.plist in Resources */,
 				40CF495122099AE700AEAFB5 /* Assets.xcassets in Resources */,
@@ -369,8 +387,10 @@
 				40CF497B22099BDE00AEAFB5 /* PostViewController.swift in Sources */,
 				40CF494C22099AE500AEAFB5 /* SignUpViewController.swift in Sources */,
 				40CF494A22099AE500AEAFB5 /* AppDelegate.swift in Sources */,
-				406AC4CE2209A3BA00E490F8 /* User.swift in Sources */,
+				406AC4CE2209A3BA00E490F8 /* UserRealm.swift in Sources */,
+				400BCB302212195C00F58EF8 /* CustomCell.swift in Sources */,
 				40CF497922099BD600AEAFB5 /* ShowViewController.swift in Sources */,
+				400BCB332212CAF700F58EF8 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

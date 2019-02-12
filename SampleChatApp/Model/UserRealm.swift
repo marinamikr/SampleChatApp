@@ -7,14 +7,11 @@
 //
 
 import Foundation
-class User: NSObject {
+import RealmSwift
+
+class UserRealm: Object {
     @objc dynamic var userName: String!
     @objc dynamic var iconImage: NSData!
     @objc dynamic var contents: String!
     
-    init(text:String,userName:String,icon:NSData) {
-        self.iconImage = icon
-        self.userName = userName
-        self.contents = text
-    }
 }

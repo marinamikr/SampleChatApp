@@ -46,7 +46,7 @@ class SignUpViewController: UIViewController{
         
         let realm = try! Realm()
         
-        let saveData = User()
+        let saveData = UserRealm()
         saveData.userName = userNameTextField.text
         saveData.iconImage = iconImageView.image?.jpegData(compressionQuality: 1.0) as! NSData
         try! realm.write() {
@@ -70,7 +70,6 @@ extension SignUpViewController: UITextFieldDelegate {
 }
 
 extension SignUpViewController: UIImagePickerControllerDelegate ,UINavigationControllerDelegate{
-    //　撮影が完了時した時に呼ばれる
     func imagePickerController(_ imagePicker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         

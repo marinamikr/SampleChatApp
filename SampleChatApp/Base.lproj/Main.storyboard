@@ -35,6 +35,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="showImageTableView" destination="00X-kb-5uv" id="kVa-8s-Mwz"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toSignUpViewController" id="mTm-zc-yQm"/>
                     </connections>
                 </viewController>
